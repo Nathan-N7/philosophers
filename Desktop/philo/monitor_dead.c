@@ -21,8 +21,8 @@ void    check_dead(t_philo *philo)
     pthread_mutex_unlock(&philo->lock);
     if (time > philo->table->time_die)
     {
-        printf("%ld %d is dead\n", now() - philo->table->tm_start, philo->id);
         pthread_mutex_lock(&philo->table->dead);
+        printf("%ld %d is dead\n", now() - philo->table->tm_start, philo->id);
         philo->table->has_dead = 1;
         pthread_mutex_unlock(&philo->table->dead);
     }

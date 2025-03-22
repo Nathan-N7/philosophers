@@ -58,7 +58,7 @@ int starting_thread(t_table *table)
     i = -1;
     philos = table->philos;
     table->tm_start = now();
-    //pthread_create(&table->monitor, NULL, monitor, table);
+    pthread_create(&table->monitor, NULL, monitor, philos);
     while (++i < table->philo_nbr)
     {
         pthread_mutex_lock(&table->philos[i].lock);
