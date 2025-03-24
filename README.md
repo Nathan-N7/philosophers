@@ -1,17 +1,26 @@
-##PHILOSOPHERS!!
+# Projeto Philosophers - 42 School
 
-Philosophers is a simulation of the dining philosophers problem, where multiple philosophers sit around a table, thinking and eating. The goal is to prevent deadlocks and ensure all philosophers get a chance to eat.
+Bem-vindo ao repositório do projeto **Philosophers** da 42 School.
 
-##Installation
+## Sobre o Projeto
 
-git clone git@github.com:Nathan-N7/philosophers.git
-cd philosophers
+O **Philosophers** é um projeto que explora conceitos de concorrência e sincronização, simulando o famoso problema dos filósofos. Este projeto tem como objetivo aprofundar o entendimento sobre threads, mutexes e gerenciamento de recursos em programação.
 
-##usage
+## Funcionalidades
 
-make
-./philosophers <number_of_philosophers> <time_to_think> <time_to_eat> <time_to_sleep>
+- Simulação do problema dos filósofos com gerenciamento de recursos compartilhados.
+- Implementação de soluções para evitar deadlocks e condições de corrida.
+- Uso de técnicas de sincronização (mutexes, semáforos, etc.) para garantir a consistência dos dados.
+- Visualização do estado dos filósofos durante a execução.
 
-##Example
+## Tecnologias Utilizadas
 
-./philosophers 5 800 200 400
+- Linguagem: **C** (ou a linguagem específica adotada pelo seu projeto)
+- Ferramentas de compilação: `make`
+- Sistema operacional: **Linux/Unix**
+
+## Estrutura do Projeto
+
+A estrutura básica do repositório é a seguinte:
+
+
